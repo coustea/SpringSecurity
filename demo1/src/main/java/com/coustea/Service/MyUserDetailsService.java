@@ -35,4 +35,9 @@ public class MyUserDetailsService implements UserDetailsService {
                 user.getUsername(),new BCryptPasswordEncoder().encode(user.getPassword())
                 ,authorityList);
     }
+
+    public void insertUser(Users user){
+        userMapper.insertUser(user);
+    }
+
 }

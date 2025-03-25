@@ -9,5 +9,5 @@ public interface UserMapper {
 
     Users getUsernameWithPassword(String name);
 
-
+    void insertUser(Users user);
 }

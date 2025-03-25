@@ -19,4 +19,14 @@ class Demo1ApplicationTests {
         System.out.println(user);
     }
 
+    @Test
+    public void test2(){
+        String username = "admin";
+        String password = "admin";
+        Users user = new Users(username,password);
+        userMapper.insertUser(user);
+        System.out.println(username +" " +  password);
+    }
+
+
 }
